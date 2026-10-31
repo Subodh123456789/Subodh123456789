@@ -1,466 +1,290 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Personal portfolio showcasing my skills, projects, and experience.">
-<title>Your Name | Developer Portfolio</title>
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-
-:root {
-    --bg: #0b1020;
-    --card: #121a2e;
-    --text: #f1f5f9;
-    --muted: #9aa9bd;
-    --accent: #60a5fa;
-    --border: #26344d;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.7;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.container {
-    width: min(1100px, 90%);
-    margin: auto;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px 0;
-    border-bottom: 1px solid var(--border);
-}
-
-.logo {
-    font-size: 22px;
-    font-weight: 800;
-    color: var(--accent);
-}
-
-.nav-links {
-    display: flex;
-    gap: 25px;
-    list-style: none;
-}
-
-.nav-links a {
-    color: var(--muted);
-    font-size: 14px;
-    transition: .3s;
-}
-
-.nav-links a:hover {
-    color: var(--accent);
-}
-
-.hero {
-    min-height: 520px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 90px 0;
-}
-
-.tag {
-    color: var(--accent);
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.hero h1 {
-    font-size: clamp(42px, 7vw, 76px);
-    line-height: 1.12;
-    margin: 20px 0;
-    max-width: 850px;
-}
-
-.hero h1 span {
-    color: var(--accent);
-}
-
-.hero p {
-    max-width: 650px;
-    color: var(--muted);
-    font-size: 17px;
-}
-
-.buttons {
-    display: flex;
-    gap: 15px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-}
-
-.btn {
-    padding: 12px 23px;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 14px;
-    transition: .3s;
-}
-
-.primary {
-    background: var(--accent);
-    color: #07111f;
-}
-
-.secondary {
-    border: 1px solid var(--border);
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-}
-
-section {
-    padding: 75px 0;
-}
-
-.section-title {
-    font-size: 30px;
-    margin-bottom: 12px;
-}
-
-.section-subtitle {
-    color: var(--muted);
-    margin-bottom: 35px;
-}
-
-.about-text {
-    color: var(--muted);
-    max-width: 850px;
-}
-
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.skill {
-    padding: 10px 17px;
-    border: 1px solid var(--border);
-    background: var(--card);
-    border-radius: 8px;
-    font-size: 14px;
-    color: #bfdbfe;
-}
-
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 22px;
-}
-
-.project-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 25px;
-    transition: .3s;
-}
-
-.project-card:hover {
-    transform: translateY(-6px);
-    border-color: var(--accent);
-}
-
-.project-icon {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-.project-card h3 {
-    font-size: 19px;
-    margin-bottom: 10px;
-}
-
-.project-card p {
-    color: var(--muted);
-    font-size: 14px;
-    margin-bottom: 18px;
-}
-
-.tech {
-    color: var(--accent);
-    font-size: 12px;
-    margin-bottom: 20px;
-}
-
-.project-links {
-    display: flex;
-    gap: 18px;
-    font-size: 13px;
-    font-weight: 600;
-}
-
-.project-links a:hover {
-    color: var(--accent);
-}
-
-.experience-card {
-    border-left: 2px solid var(--accent);
-    padding: 5px 0 5px 25px;
-    margin-bottom: 25px;
-}
-
-.experience-card p {
-    color: var(--muted);
-}
-
-.contact {
-    text-align: center;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    padding: 55px 25px;
-}
-
-.contact p {
-    color: var(--muted);
-    margin: 15px auto 25px;
-    max-width: 550px;
-}
-
-footer {
-    text-align: center;
-    padding: 30px 0;
-    color: var(--muted);
-    font-size: 13px;
-    border-top: 1px solid var(--border);
-}
-
-@media(max-width: 650px) {
-    .nav-links {
-        gap: 12px;
-        font-size: 12px;
-    }
-
-    .nav-links a {
-        font-size: 11px;
-    }
-
-    .hero {
-        min-height: 430px;
-    }
-
-    section {
-        padding: 55px 0;
-    }
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Subodh Subedi (Hadrik James) — Full Stack Web Developer from Nepal. React, Node.js, Python, C++ expert building beautiful, functional websites." />
+  <meta name="keywords" content="Subodh Subedi, Hadrik James, Web Developer Nepal, Full Stack Developer, React, NodeJS, Portfolio" />
+  <meta property="og:title" content="Subodh Subedi | Full Stack Web Developer" />
+  <meta property="og:description" content="Passionate software engineer crafting innovative web solutions from Nepal." />
+  <title>Subodh Subedi — Full Stack Web Developer</title>
+  <link rel="icon" href="assets/icons/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
 </head>
-
 <body>
 
-<div class="container">
-
-<nav>
-    <div class="logo">&lt;YourName /&gt;</div>
-    <ul class="nav-links">
+  <!-- NAVBAR -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">Subodh<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+      </ul>
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
+    </nav>
+  </header>
 
-<!-- HERO -->
-<header class="hero">
-    <div class="tag">Available for opportunities</div>
-
-    <h1>
-        Hi, I'm <span>Your Name.</span><br>
-        I build things for the web.
-    </h1>
-
-    <p>
-        I'm a passionate Developer who loves building
-        modern, responsive, and user-friendly applications.
-        I enjoy solving problems, learning new technologies,
-        and turning ideas into real-world projects.
-    </p>
-
-    <div class="buttons">
-        <a href="#projects" class="btn primary">Explore My Work →</a>
-        <a href="https://github.com/yourusername"
-           target="_blank" class="btn secondary">
-           GitHub Profile
-        </a>
-    </div>
-</header>
-
-<!-- ABOUT -->
-<section id="about">
-    <h2 class="section-title">About Me</h2>
-    <p class="section-subtitle">A little introduction</p>
-
-    <p class="about-text">
-        I'm a motivated developer interested in creating
-        practical software solutions and exploring new
-        technologies. I believe in continuous learning,
-        writing clean code, and building projects that
-        solve meaningful problems.
-
-        My goal is to grow as a developer, collaborate
-        with talented people, and contribute to impactful
-        software projects.
-    </p>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-    <h2 class="section-title">Technical Skills</h2>
-    <p class="section-subtitle">Technologies I work with</p>
-
-    <div class="skills">
-        <span class="skill">HTML5</span>
-        <span class="skill">CSS3</span>
-        <span class="skill">JavaScript</span>
-        <span class="skill">Python</span>
-        <span class="skill">React</span>
-        <span class="skill">Node.js</span>
-        <span class="skill">Git</span>
-        <span class="skill">GitHub</span>
-        <span class="skill">MySQL</span>
-        <span class="skill">REST APIs</span>
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-    <h2 class="section-title">Featured Projects</h2>
-    <p class="section-subtitle">
-        Some things I've built and worked on.
-    </p>
-
-    <div class="projects">
-
-        <article class="project-card">
-            <div class="project-icon">🌐</div>
-            <h3>Portfolio Website</h3>
-            <p>
-                A responsive personal portfolio showcasing
-                my skills, professional background, and
-                development projects.
-            </p>
-            <div class="tech">HTML • CSS • JavaScript</div>
-            <div class="project-links">
-                <a href="https://github.com/yourusername/project-one"
-                   target="_blank">GitHub ↗</a>
-                <a href="#" target="_blank">Live Demo ↗</a>
-            </div>
-        </article>
-
-        <article class="project-card">
-            <div class="project-icon">🚀</div>
-            <h3>Project Two</h3>
-            <p>
-                Replace this description with the problem
-                your project solves, its main features,
-                and what makes it useful.
-            </p>
-            <div class="tech">Python • API • Database</div>
-            <div class="project-links">
-                <a href="https://github.com/yourusername/project-two"
-                   target="_blank">GitHub ↗</a>
-                <a href="#" target="_blank">Live Demo ↗</a>
-            </div>
-        </article>
-
-        <article class="project-card">
-            <div class="project-icon">💡</div>
-            <h3>Project Three</h3>
-            <p>
-                Add another project here. Explain the
-                technologies used, your contribution,
-                and the result you achieved.
-            </p>
-            <div class="tech">React • JavaScript • CSS</div>
-            <div class="project-links">
-                <a href="https://github.com/yourusername/project-three"
-                   target="_blank">GitHub ↗</a>
-                <a href="#" target="_blank">Live Demo ↗</a>
-            </div>
-        </article>
-
-    </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-    <h2 class="section-title">Experience & Education</h2>
-    <p class="section-subtitle">My professional journey</p>
-
-    <div class="experience-card">
-        <h3>Your Degree / Qualification</h3>
-        <p>Your College or University • Year</p>
-        <p>
-            Add your education, specialization,
-            achievements, or relevant coursework here.
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="greeting">Hi, I'm</p>
+        <h1>Subodh Subedi <span>(Hadrik James)</span></h1>
+        <h2>I'm a <span id="typed"></span></h2>
+        <p class="hero-desc">
+          A passionate full-stack developer from Nepal crafting beautiful,
+          functional websites and scalable software solutions.
         </p>
-    </div>
-
-    <div class="experience-card">
-        <h3>Personal Projects & Development</h3>
-        <p>Independent Learning • Present</p>
-        <p>
-            Building applications, improving technical
-            skills, and contributing to projects.
-        </p>
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-    <div class="contact">
-        <h2 class="section-title">Let's Work Together</h2>
-        <p>
-            I'm always interested in discussing new
-            opportunities, interesting projects, and
-            collaborations. Feel free to reach out!
-        </p>
-
-        <div class="buttons" style="justify-content:center">
-            <a href="mailto:your.email@example.com"
-               class="btn primary">Email Me →</a>
-
-            <a href="https://linkedin.com/in/yourusername"
-               target="_blank" class="btn secondary">
-               LinkedIn
-            </a>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="assets/resume.pdf" class="btn btn-outline" download>Download CV</a>
         </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Subodh123456789" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://createwebsites.netlify.app/" target="_blank" aria-label="Portfolio"><i class="fas fa-globe"></i></a>
+          <a href="https://subodhsubedi.netlify.app/" target="_blank" aria-label="Projects"><i class="fas fa-code"></i></a>
+          <a href="mailto:hello@subodhsubedi.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <div class="img-frame">
+          <img src="assets/images/profile.jpg" alt="Subodh Subedi" />
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<footer>
-    <p>© 2026 Your Name. Built with passion and code.</p>
-    <p>Designed & Developed by You ❤️</p>
-</footer>
+  <!-- ABOUT -->
+  <section id="about" class="about section">
+    <div class="container">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am a passionate and dedicated software engineer with a profound love
+            for crafting innovative solutions in technology. With a solid foundation
+            in computer science and programming, I thrive on tackling complex problems
+            and transforming ideas into tangible software products.
+          </p>
+          <p>
+            My expertise spans web development, system architecture, and application
+            design. I'm adept at leveraging cutting-edge technologies, frameworks, and
+            methodologies to create robust, scalable, and user-centric software solutions.
+          </p>
+          <a href="#contact" class="btn btn-primary">Let's Talk</a>
+        </div>
+        <div class="about-stats">
+          <div class="stat"><h3>650+</h3><p>Projects Completed</p></div>
+          <div class="stat"><h3>10+</h3><p>Years Experience</p></div>
+          <div class="stat"><h3>300+</h3><p>Happy Clients</p></div>
+          <div class="stat"><h3>400+</h3><p>Customer Reviews</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</div>
+  <!-- SKILLS -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2 class="section-title">My <span>Skills</span></h2>
+      <div class="skills-grid">
+        <div class="skill-bar"><div class="skill-info"><span>HTML5</span><span>80%</span></div><div class="bar"><div class="fill" data-width="80"></div></div></div>
+        <div class="skill-bar"><div class="skill-info"><span>CSS3 / Sass</span><span>95%</span></div><div class="bar"><div class="fill" data-width="95"></div></div></div>
+        <div class="skill-bar"><div class="skill-info"><span>JavaScript</span><span>85%</span></div><div class="bar"><div class="fill" data-width="85"></div></div></div>
+        <div class="skill-bar"><div class="skill-info"><span>ReactJS</span><span>85%</span></div><div class="bar"><div class="fill" data-width="85"></div></div></div>
+        <div class="skill-bar"><div class="skill-info"><span>NodeJS</span><span>91%</span></div><div class="bar"><div class="fill" data-width="91"></div></div></div>
+        <div class="skill-bar"><div class="skill-info"><span>Python</span><span>70%</span></div><div class="bar"><div class="fill" data-width="70"></div></div></div>
+        <div class="skill-bar"><div class="skill-info"><span>C++</span><span>85%</span></div><div class="bar"><div class="fill" data-width="85"></div></div></div>
+        <div class="skill-bar"><div class="skill-info"><span>MySQL / MongoDB</span><span>80%</span></div><div class="bar"><div class="fill" data-width="80"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <h2 class="section-title">My <span>Timeline</span></h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="date">2023 – Present</span>
+          <h3>Web Developer — Vircrosoft</h3>
+          <p>Full-stack website development serving clients with modern, scalable web solutions.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">2020 – 2023</span>
+          <h3>Software Engineer — Boogle, Inc.</h3>
+          <p>Software engineering and DevOps — CI/CD pipelines, cloud deployment, and system architecture.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">2017 – 2020</span>
+          <h3>C++ Programmer — Slime Tech</h3>
+          <p>Backend development and game engine work in C++.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">Education</span>
+          <h3>BSc (Hons) Computer Science — University of Sunderland</h3>
+          <p>International School of Management and Technology — with Cybersecurity specialization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2 class="section-title">My <span>Portfolio</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <img src="assets/images/project-1.jpg" alt="Real Estate Portfolio" />
+          <div class="project-overlay">
+            <h3>Real Estate Portfolio</h3>
+            <p>Sass · JavaScript · Node · GitHub Pages</p>
+            <a href="https://subodhsubedi.netlify.app/" target="_blank">View Live <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/images/project-2.jpg" alt="PoxNora TCG Database" />
+          <div class="project-overlay">
+            <h3>PoxNora TCG Database</h3>
+            <p>React · Sass · Create React App · REST API</p>
+            <a href="https://github.com/Subodh123456789" target="_blank">View Code <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/images/project-3.jpg" alt="Eats Restro & Bar" />
+          <div class="project-overlay">
+            <h3>Eats Restro & Bar</h3>
+            <p>PHP · Bootstrap 4 · MySQL · Heroku</p>
+            <a href="https://github.com/Subodh123456789" target="_blank">View Code <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/images/project-4.jpg" alt="Spa and Wellness" />
+          <div class="project-overlay">
+            <h3>Spa & Wellness</h3>
+            <p>WordPress · AWS · Adobe XD · Elementor</p>
+            <a href="https://github.com/Subodh123456789" target="_blank">View Live <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/images/project-5.jpg" alt="Barbershop Template" />
+          <div class="project-overlay">
+            <h3>Barbershop Template</h3>
+            <p>Speed · UI/UX · SEO · Cross-browser</p>
+            <a href="https://createwebsites.netlify.app/" target="_blank">View Live <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/images/project-6.jpg" alt="3D Animation Portfolio" />
+          <div class="project-overlay">
+            <h3>3D Animation Showcase</h3>
+            <p>Three.js · WebGL · JavaScript</p>
+            <a href="https://github.com/Subodh123456789" target="_blank">View Code <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="blog section">
+    <div class="container">
+      <h2 class="section-title">My <span>Blog</span></h2>
+      <div class="blog-grid">
+        <article class="blog-card">
+          <div class="blog-date">Web Design</div>
+          <h3>How to Create Your Own Website?</h3>
+          <p>Creating your own website is easier than you think — learn the basics and message me if you want to build one.</p>
+          <a href="#contact">Read More <i class="fas fa-arrow-right"></i></a>
+        </article>
+        <article class="blog-card">
+          <div class="blog-date">Web Design</div>
+          <h3>How to Become an Expert in Web Design</h3>
+          <p>Becoming a master in web design needs high concentration and regular practice. Message me for the easiest path.</p>
+          <a href="#contact">Read More <i class="fas fa-arrow-right"></i></a>
+        </article>
+        <article class="blog-card">
+          <div class="blog-date">Course</div>
+          <h3>Become a Web Designer in 2 Weeks</h3>
+          <p>Learn the fastest way to build a satisfying website. Email 'Boostweb' to enroll in my 2-week bootcamp.</p>
+          <a href="#contact">Read More <i class="fas fa-arrow-right"></i></a>
+        </article>
+        <article class="blog-card">
+          <div class="blog-date">Debugging</div>
+          <h3>Debugging Made Easy with Web Inspector</h3>
+          <p>Master Chrome DevTools to hunt bugs in seconds — email me for the full guide.</p>
+          <a href="#contact">Read More <i class="fas fa-arrow-right"></i></a>
+        </article>
+        <article class="blog-card">
+          <div class="blog-date">UI/UX</div>
+          <h3>Get Started with Web Design & UI Design</h3>
+          <p>Email 'WEB' and 'UI' below to get my starter kit and resources.</p>
+          <a href="#contact">Read More <i class="fas fa-arrow-right"></i></a>
+        </article>
+        <article class="blog-card">
+          <div class="blog-date">Web Design</div>
+          <h3>This Is What You Need to Know About Web Design</h3>
+          <p>Kindly email me for the complete checklist every designer should follow.</p>
+          <a href="#contact">Read More <i class="fas fa-arrow-right"></i></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2 class="section-title">Get In <span>Touch</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Let's build something great together.</h3>
+          <p>Site maintenance, feature updates, or a brand-new idea — I'm ready.</p>
+          <ul>
+            <li><i class="fas fa-envelope"></i> hello@subodhsubedi.com</li>
+            <li><i class="fas fa-map-marker-alt"></i> Nepal</li>
+            <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/">Text on WhatsApp</a></li>
+            <li><i class="fab fa-github"></i> <a href="https://github.com/Subodh123456789" target="_blank">github.com/Subodh123456789</a></li>
+          </ul>
+          <div class="hero-socials">
+            <a href="https://createwebsites.netlify.app/" target="_blank"><i class="fas fa-globe"></i></a>
+            <a href="https://subodhsubedi.netlify.app/" target="_blank"><i class="fas fa-code"></i></a>
+            <a href="https://github.com/Subodh123456789" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <input type="text" placeholder="Subject" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Subodh Subedi (Hadrik James). Crafted with <i class="fas fa-heart"></i> in Nepal.</p>
+      <a href="#home" class="back-top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
-

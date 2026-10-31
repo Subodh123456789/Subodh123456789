@@ -1,62 +1,120 @@
+👋 Hi, I'm Subodh Subedi
+💻 Full-Stack Web Developer | Freelance Web Developer | Creative Problem Solver
 
-# 👋 Hi, I'm Subodh Subedi!
+I build modern, responsive, and user-friendly websites and web applications. I'm passionate about turning ideas into functional digital experiences through clean code, thoughtful design, and modern web technologies.
 
-### 💻 Aspiring Software Developer | Tech Enthusiast | Problem Solver
+🌐 Portfolio: subodhsubedi.netlify.app
+🚀 Explore My Work: createwebsites.netlify.app
+📍 Based in: Nepal
 
-Welcome to my GitHub profile! 🚀
+👨‍💻 About Me
 
-I'm passionate about technology, programming, and building
-projects that solve real-world problems.
+I'm Subodh Subedi, an IT professional and freelance web developer specializing in full-stack web development.
 
----
+I enjoy creating websites, developing interactive applications, working with databases, and building digital solutions for businesses.
 
-## 🙋‍♂️ About Me
+💻 Specializing in full-stack web development.
+🌐 Building responsive websites and web applications.
+🎨 Interested in modern UI/UX and web design.
+⚡ Experienced with frontend and backend technologies.
+🗄️ Interested in database-driven applications.
+🚀 Continuously exploring new technologies and improving my skills.
+🤝 Open to freelance projects and collaboration.
+🛠️ Tech Stack & Technologies
 
-- 🌱 Currently learning and improving my development skills.
-- 💻 Interested in building modern applications.
-- 🚀 Working on personal and open-source projects.
-- 🎯 Focused on continuous learning and professional growth.
-- 🤝 Open to collaboration and new opportunities.
+Frontend Development
 
----
+HTML5 · CSS3 · JavaScript · React.js · Bootstrap · Sass/SCSS
 
-## 🛠️ Technologies & Tools
+Backend Development
 
-- **Languages:** Python, JavaScript, Java
-- **Frontend:** HTML, CSS, React
-- **Backend:** Node.js, Python
-- **Database:** MySQL, MongoDB
-- **Tools:** Git, GitHub, VS Code
+Node.js · PHP · JavaScript
 
----
+Database
 
-## 🚀 My Projects
+MySQL · Database CRUD Operations
 
-### 1. Personal Portfolio Website
-A responsive portfolio showcasing my skills and projects.
+CMS & Platforms
 
-### 2. Project Two
-Add your project description here.
+WordPress
 
-### 3. Project Three
-Add your project description here.
+Tools & Deployment
 
----
+Git · GitHub · VS Code · AWS · Heroku · Netlify
 
-## 📊 GitHub Statistics
+🚀 Featured Projects
+🏡 1. Real Estate Business Website
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight)
+A professional real estate portfolio website designed to showcase business information and provide an accessible experience across desktop, tablet, and mobile devices.
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight)
+Responsive website design
+Customized layouts and interactive features
+Business-focused presentation
 
----
+Technologies: JavaScript, Node.js, Sass/SCSS
 
-## 🌐 Connect With Me
+🔗 View My Portfolio
 
-- GitHub: https://github.com/YOUR_USERNAME
-- LinkedIn: Your LinkedIn URL
-- Email: your.email@example.com
+🎮 2. PoxNora Database CRUD Application
 
----
+A database-driven application for PoxNora, built to help users access and explore game-related information.
 
-⭐ Thanks for visiting my profile!
+React-based interface
+Dynamic data rendering
+API integration
+Database-oriented functionality
+
+Technologies: React.js, JavaScript, Sass/SCSS, PoxNora API
+
+🔗 View My Portfolio
+
+🍽️ 3. Eats Restro & Bar
+
+A restaurant website designed to showcase restaurant information and provide shopping-cart functionality.
+
+Restaurant website design
+Shopping cart functionality
+Database-backed menu items
+
+Technologies: Bootstrap, PHP, MySQL
+
+🔗 View My Portfolio
+
+🧖 4. Spa & Wellness Website
+
+A website for a spa and wellness business, customized with WordPress and designed to provide a polished user experience.
+
+WordPress customization
+Website design and maintenance
+Hosting and deployment
+
+Technologies: WordPress, AWS, Elementor
+
+🔗 View My Portfolio
+
+🌐 My Portfolio
+
+Want to see more of my work?
+
+Visit My Personal Portfolio →
+
+Explore My Web Design Portfolio →
+
+📊 GitHub Overview
+
+!GitHub Stats
+
+!Top Languages
+
+🤝 Let's Connect
+
+I'm interested in connecting with developers, businesses, and people who have exciting ideas to build.
+
+🌐 Portfolio: https://subodhsubedi.netlify.app/
+💻 GitHub: https://github.com/Subodh123456789
+🚀 Web Design: https://createwebsites.netlify.app/
+📧 Email: Contact me through my portfolio website.
+
+⭐ If you like my work, feel free to explore my repositories and connect with me!
+
+Thanks for visiting my GitHub profile!

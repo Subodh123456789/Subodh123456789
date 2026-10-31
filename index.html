@@ -1,1 +1,466 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Personal portfolio showcasing my skills, projects, and experience.">
+<title>Your Name | Developer Portfolio</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --bg: #0b1020;
+    --card: #121a2e;
+    --text: #f1f5f9;
+    --muted: #9aa9bd;
+    --accent: #60a5fa;
+    --border: #26344d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--accent);
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--muted);
+    font-size: 14px;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 90px 0;
+}
+
+.tag {
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 76px);
+    line-height: 1.12;
+    margin: 20px 0;
+    max-width: 850px;
+}
+
+.hero h1 span {
+    color: var(--accent);
+}
+
+.hero p {
+    max-width: 650px;
+    color: var(--muted);
+    font-size: 17px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 23px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.primary {
+    background: var(--accent);
+    color: #07111f;
+}
+
+.secondary {
+    border: 1px solid var(--border);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+section {
+    padding: 75px 0;
+}
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.section-subtitle {
+    color: var(--muted);
+    margin-bottom: 35px;
+}
+
+.about-text {
+    color: var(--muted);
+    max-width: 850px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill {
+    padding: 10px 17px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    border-radius: 8px;
+    font-size: 14px;
+    color: #bfdbfe;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+
+.project-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 25px;
+    transition: .3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+}
+
+.project-icon {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.tech {
+    color: var(--accent);
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.project-links {
+    display: flex;
+    gap: 18px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.project-links a:hover {
+    color: var(--accent);
+}
+
+.experience-card {
+    border-left: 2px solid var(--accent);
+    padding: 5px 0 5px 25px;
+    margin-bottom: 25px;
+}
+
+.experience-card p {
+    color: var(--muted);
+}
+
+.contact {
+    text-align: center;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 55px 25px;
+}
+
+.contact p {
+    color: var(--muted);
+    margin: 15px auto 25px;
+    max-width: 550px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    color: var(--muted);
+    font-size: 13px;
+    border-top: 1px solid var(--border);
+}
+
+@media(max-width: 650px) {
+    .nav-links {
+        gap: 12px;
+        font-size: 12px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .hero {
+        min-height: 430px;
+    }
+
+    section {
+        padding: 55px 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<nav>
+    <div class="logo">&lt;YourName /&gt;</div>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+    <div class="tag">Available for opportunities</div>
+
+    <h1>
+        Hi, I'm <span>Your Name.</span><br>
+        I build things for the web.
+    </h1>
+
+    <p>
+        I'm a passionate Developer who loves building
+        modern, responsive, and user-friendly applications.
+        I enjoy solving problems, learning new technologies,
+        and turning ideas into real-world projects.
+    </p>
+
+    <div class="buttons">
+        <a href="#projects" class="btn primary">Explore My Work →</a>
+        <a href="https://github.com/yourusername"
+           target="_blank" class="btn secondary">
+           GitHub Profile
+        </a>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-subtitle">A little introduction</p>
+
+    <p class="about-text">
+        I'm a motivated developer interested in creating
+        practical software solutions and exploring new
+        technologies. I believe in continuous learning,
+        writing clean code, and building projects that
+        solve meaningful problems.
+
+        My goal is to grow as a developer, collaborate
+        with talented people, and contribute to impactful
+        software projects.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+    <p class="section-subtitle">Technologies I work with</p>
+
+    <div class="skills">
+        <span class="skill">HTML5</span>
+        <span class="skill">CSS3</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Python</span>
+        <span class="skill">React</span>
+        <span class="skill">Node.js</span>
+        <span class="skill">Git</span>
+        <span class="skill">GitHub</span>
+        <span class="skill">MySQL</span>
+        <span class="skill">REST APIs</span>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-subtitle">
+        Some things I've built and worked on.
+    </p>
+
+    <div class="projects">
+
+        <article class="project-card">
+            <div class="project-icon">🌐</div>
+            <h3>Portfolio Website</h3>
+            <p>
+                A responsive personal portfolio showcasing
+                my skills, professional background, and
+                development projects.
+            </p>
+            <div class="tech">HTML • CSS • JavaScript</div>
+            <div class="project-links">
+                <a href="https://github.com/yourusername/project-one"
+                   target="_blank">GitHub ↗</a>
+                <a href="#" target="_blank">Live Demo ↗</a>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="project-icon">🚀</div>
+            <h3>Project Two</h3>
+            <p>
+                Replace this description with the problem
+                your project solves, its main features,
+                and what makes it useful.
+            </p>
+            <div class="tech">Python • API • Database</div>
+            <div class="project-links">
+                <a href="https://github.com/yourusername/project-two"
+                   target="_blank">GitHub ↗</a>
+                <a href="#" target="_blank">Live Demo ↗</a>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="project-icon">💡</div>
+            <h3>Project Three</h3>
+            <p>
+                Add another project here. Explain the
+                technologies used, your contribution,
+                and the result you achieved.
+            </p>
+            <div class="tech">React • JavaScript • CSS</div>
+            <div class="project-links">
+                <a href="https://github.com/yourusername/project-three"
+                   target="_blank">GitHub ↗</a>
+                <a href="#" target="_blank">Live Demo ↗</a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <h2 class="section-title">Experience & Education</h2>
+    <p class="section-subtitle">My professional journey</p>
+
+    <div class="experience-card">
+        <h3>Your Degree / Qualification</h3>
+        <p>Your College or University • Year</p>
+        <p>
+            Add your education, specialization,
+            achievements, or relevant coursework here.
+        </p>
+    </div>
+
+    <div class="experience-card">
+        <h3>Personal Projects & Development</h3>
+        <p>Independent Learning • Present</p>
+        <p>
+            Building applications, improving technical
+            skills, and contributing to projects.
+        </p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="contact">
+        <h2 class="section-title">Let's Work Together</h2>
+        <p>
+            I'm always interested in discussing new
+            opportunities, interesting projects, and
+            collaborations. Feel free to reach out!
+        </p>
+
+        <div class="buttons" style="justify-content:center">
+            <a href="mailto:your.email@example.com"
+               class="btn primary">Email Me →</a>
+
+            <a href="https://linkedin.com/in/yourusername"
+               target="_blank" class="btn secondary">
+               LinkedIn
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Your Name. Built with passion and code.</p>
+    <p>Designed & Developed by You ❤️</p>
+</footer>
+
+</div>
+</body>
+</html>
+

@@ -69,38 +69,193 @@ I enjoy transforming ideas into functional, attractive, and user-friendly applic
 
 </div>
 
-🚀 Featured Projects
-🎮 01. PoxNora Database CRUD Application
+🚀 PROJECT SHOWCASE
 
-<a href="https://github.com/Subodh123456789/poxnora-db-crud">
-<img src="https://img.shields.io/badge/VIEW%20PROJECT-6c5ce7?style=for-the-badge&logo=github&logoColor=white" alt="PoxNora repository" />
-</a>
+<div align="center">
 
-A React-based application focused on exploring PoxNora game-related information, champions, and equipment.
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=25&duration=2500&pause=700&color=9B8CFF&center=true&vCenter=true&width=700&lines=MY+CREATIVE+DEVELOPMENT+WORLD;BUILDING+IDEAS+INTO+REALITY;DESIGN.+DEVELOP.+DEPLOY." alt="Animated project heading" />
 
-Features and technologies:
+Explore my development journey, creative experiments, and real-world applications.
 
-React-based application architecture.
-Dynamic data rendering.
-Search and filtering functionality.
-Axios-based HTTP requests.
-Foundation for REST API integration.
+</div>
+
+🏆 FEATURED PROJECTS
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<div align="center">
+
+🎮 PoxNora Database CRUD
+
+<img src="https://img.shields.io/badge/REACT-APPLICATION-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+
+</div>
+
+A modern React application designed for exploring PoxNora game-related information, champions, and equipment.
+
+✨ Highlights
+
+Dynamic React rendering
+Search and filtering
+Axios API integration
+Database-oriented architecture
+Responsive interface
+
+⚡ Tech Stack
 
 React JavaScript Axios CSS3
 
-💬 02. Firebase FriendlyChat Android
+<div align="center">
 
-<a href="https://github.com/Subodh123456789/codelab-friendlychat-android">
-<img src="https://img.shields.io/badge/VIEW%20PROJECT-4834d4?style=for-the-badge&logo=github&logoColor=white" alt="FriendlyChat repository" />
+<a href="https://github.com/Subodh123456789/poxnora-db-crud">
+<img src="https://img.shields.io/badge/⌘_SOURCE_CODE-6c5ce7?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 
-An Android messaging project based on Google's Firebase FriendlyChat codelab, exploring mobile development and Firebase integration.
+<img src="https://img.shields.io/badge/STATUS-IN_DEVELOPMENT-orange?style=for-the-badge" />
 
-Technologies:
+</div>
+
+</td>
+<td width="50%" valign="top">
+
+<div align="center">
+
+💬 Firebase FriendlyChat
+
+<img src="https://img.shields.io/badge/ANDROID-APPLICATION-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
+
+</div>
+
+An Android messaging project based on Google's Firebase FriendlyChat codelab.
+
+✨ Highlights
+
+Android application development
+Kotlin-based development
+Firebase integration
+Messaging application concepts
+Mobile application experience
+
+⚡ Tech Stack
 
 Kotlin Android Firebase
 
-🌐 03. Personal HTML Project
+<div align="center">
+
+<a href="https://github.com/Subodh123456789/codelab-friendlychat-android">
+<img src="https://img.shields.io/badge/⌘_SOURCE_CODE-4834d4?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+
+<img src="https://img.shields.io/badge/PLATFORM-ANDROID-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<div align="center">
+
+🌐 Personal Web Projects
+
+<img src="https://img.shields.io/badge/WEB-PORTFOLIO-00B4D8?style=for-the-badge&logo=googlechrome&logoColor=white" />
+
+</div>
+
+A collection of web development work showcasing website design, development, and creative digital experiences.
+
+✨ Highlights
+
+Responsive website development
+Modern frontend design
+Business-focused interfaces
+Web development experiments
+
+⚡ Tech Stack
+
+HTML CSS JavaScript
+
+<div align="center">
+
+<a href="https://subodhsubedi.netlify.app/">
+<img src="https://img.shields.io/badge/🚀_LIVE_WEBSITE-00B4D8?style=for-the-badge&logo=netlify&logoColor=white" />
+</a>
+
+<a href="https://github.com/Subodh123456789/Subodh123456789">
+<img src="https://img.shields.io/badge/SOURCE_CODE-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+
+</div>
+
+</td>
+<td width="50%" valign="top">
+
+<div align="center">
+
+💻 Website Design & Development
+
+<img src="https://img.shields.io/badge/WEB-DESIGN-6C5CE7?style=for-the-badge&logo=netlify&logoColor=white" />
+
+</div>
+
+My web projects showcase website customization, business presentation, and creative web solutions.
+
+✨ Highlights
+
+Website design and customization
+Responsive layouts
+WordPress development
+Business website solutions
+
+⚡ Tech Stack
+
+WordPress Elementor HTML CSS
+
+<div align="center">
+
+<a href="https://createwebsites.netlify.app/">
+<img src="https://img.shields.io/badge/🚀_EXPLORE_LIVE-6c5ce7?style=for-the-badge&logo=netlify&logoColor=white" />
+</a>
+
+</div>
+
+</td>
+</tr>
+</table>
+
+⚡ MORE PROJECTS FROM MY GITHUB
+
+<div align="center">
+
+<a href="https://github.com/Subodh123456789">
+<img src="https://img.shields.io/badge/EXPLORE_ALL_REPOSITORIES-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+
+<br/><br/>
+
+<a href="https://github-readme-stats.vercel.app/api/pin/?username=Subodh123456789&repo=poxnora-db-crud&theme=tokyonight&hide_border=true">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=Subodh123456789&repo=poxnora-db-crud&theme=tokyonight&hide_border=true" width="100%" alt="PoxNora repository card" />
+</a>
+
+<a href="https://github-readme-stats.vercel.app/api/pin/?username=Subodh123456789&repo=codelab-friendlychat-android&theme=tokyonight&hide_border=true">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=Subodh123456789&repo=codelab-friendlychat-android&theme=tokyonight&hide_border=true" width="100%" alt="FriendlyChat repository card" />
+</a>
+
+</div>
+
+🌟 MY DEVELOPMENT PHILOSOPHY
+
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=650&lines=Dream+%E2%80%A2+Design+%E2%80%A2+Develop+%E2%80%A2+Deploy;Turning+Creativity+Into+Technology;Always+Building+Something+New" alt="Development philosophy animation" />
+
+Every project is an opportunity to learn, create, and improve.
+
+</div>🌐 03. Personal HTML Project
 
 <a href="https://github.com/Subodh123456789/Subodh123456789">
 <img src="https://img.shields.io/badge/VIEW%20PROJECT-0984e3?style=for-the-badge&logo=github&logoColor=white" alt="HTML repository" />

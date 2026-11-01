@@ -102,6 +102,16 @@ Explore my applications, development experiments, and creative digital projects.
 
 </div>
 
+<div align="center">
+
+🎮 ChatChit chatbpt-Master🎮  
+
+<img src="https://img.shields.io/badge/REACT-APPLICATION-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
+
+<img src="https://img.shields.io/badge/●_PROJECT-LIVE_DEMO-00C853?style=for-the-badge"/>
+
+</div>
+
 A React-based application designed to explore PoxNora game-related information, champions, and equipment.
 
 ✨ Highlights
